@@ -1,0 +1,83 @@
+.infinityLine {
+  width: 100%;
+  height: 50px;
+  border-bottom: 5px solid @darkRed;
+  border-radius: 0 0 0 80px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: @tablet-width) {
+  .infinityLine {
+    height: 100px;
+    border-radius: 0 0 0 120px;
+  }
+}
+
+.infinityLine__titleWrapper {
+  width: @maxMobileWith;
+  padding-left: 50px;
+}
+
+@media (min-width: @tablet-width) {
+  .infinityLine__titleWrapper {
+    width: @maxTabletWith;
+    padding-left: 120px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .infinityLine__titleWrapper {
+    width: @maxDesktopWith;
+    padding-left: 200px;
+  }
+}
+
+.infinityLine__title {
+  display: block;
+  width: 240px;
+  font-size: 23px;
+  margin-top: 37px;
+  color: @black;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width: @tablet-width) {
+  .infinityLine__title {
+    width: 410px;
+    font-size: 40px;
+    margin-top: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .infinityLine__title {
+    width: 565px;
+    font-size: 55px;
+    margin-top: 63px;
+  }
+}
+
+.infinityLine--form {
+  position: absolute;
+  margin-top: 180px;
+}
+
+@media (min-width: @tablet-width) {
+  .infinityLine--form {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .infinityLine--form {
+    position: unset;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

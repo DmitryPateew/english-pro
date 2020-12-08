@@ -1,0 +1,56 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: @blue;
+}
+
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: @maxDesktopWith;
+  background-color: @pink;
+  border-top: 10px solid @darkRed;
+  border-radius: 100px 100px 0 0;
+}
+
+@media (min-width: @tablet-width) {
+  .footer__section {
+    border-radius: 180px 180px 0 0;
+    border-top: 3px solid @darkRed;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer__section {
+    border-left: 3px solid @darkRed;
+    border-right: 3px solid @darkRed;
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 3px solid white;
+}
+
+@media (min-width: @tablet-width) {
+  .footer__contacts {
+    flex-direction: row;
+  }
+}
+
+.footer__phoneLink {
+  cursor: pointer;
+  color: @white;
+  font-size: @desktopTextSize;
+
+  &:hover {
+    color: @darkRed;
+  }
+}
