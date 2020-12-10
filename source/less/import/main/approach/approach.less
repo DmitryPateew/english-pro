@@ -1,0 +1,215 @@
+.approach {
+  width: 280px;
+  background-image: url("../img/backgraund/notes--mobile.svg");
+  background-repeat: no-repeat;
+  background-position: -10px -22px;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 80px;
+}
+
+@media (min-width: @tablet-width) {
+  .approach {
+    width: 340px;
+    background-image: url("../img/backgraund/notes.svg");
+    background-position: -60px -20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .approach {
+    width: 500px;
+    background-image: url("../img/backgraund/notes--desktop.svg");
+    background-position: -55px -20px;
+  }
+}
+
+.approach__shell {
+  width: 240px;
+  border: 3px solid @blue;
+  border-bottom: 15px solid @darkRed;
+  border-radius: 5px;
+  background-color: white;
+}
+
+@media (min-width: @tablet-width) {
+  .approach__shell {
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .approach__shell {
+    width: 430px;
+  }
+}
+
+.approach__title {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+  color: @black;
+  border-radius: 0 0 45px 45px;
+  border: 2px solid @darkRed;
+  border-top: none;
+}
+
+@media (min-width: @tablet-width) {
+  .approach__title {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .approach__title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 0 0 75px 75px;
+  }
+}
+
+.approach__description {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: @black;
+  font-size: 16px;
+  padding-bottom: 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .approach__description {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .approach__description {
+    padding-top: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+.approach__description--modern {
+  padding-bottom: 45px;
+}
+
+.approach--big {
+  width: 280px;
+  background-image: url("../img/backgraund/notes--big-mobile-small.svg");
+  background-repeat: no-repeat;
+  background-position: -65px -18px;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 400px) {
+  .approach--big {
+    width: 370px;
+    background-image: url("../img/backgraund/notes--big-mobile.svg");
+    background-position: -65px -23px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .approach--big {
+    width: 650px;
+    background-image: url("../img/backgraund/notes--big.svg");
+    background-position: -60px -33px;
+    padding-bottom: 80px;
+  }
+}
+
+
+.approach__shell--big {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 280px;
+  border: 3px solid @blue;
+  border-bottom: 15px solid @darkRed;
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: white;
+}
+
+@media (min-width: @tablet-width) {
+  .approach__shell--big {
+    flex-direction: row;
+    max-width: 550px;
+  }
+}
+
+.approach__title--big {
+  border-bottom: 3px solid @darkRed;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .approach__title--big {
+    font-size: 20px;
+  }
+}
+
+.approach__description--big {
+  font-size: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .approach__description--big {
+    font-size: 20px;
+  }
+}
+
+.approach__list {
+  font-size: 22px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-right: 20px;
+  border: 3px solid @blue;
+  border-radius: 50px 0 50px 0;
+}
+
+.approach__item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid @darkRed;
+  list-style-type: none;
+  text-align: center;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: -18px;
+    margin-top: 10px;
+    width: 1px;
+    height: 1px;
+    padding: 2px 2px 2px 2px;
+    border: 2px solid @darkRed;
+    border-radius: 50%;
+    color: white;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .approach__item {
+    text-align: left;
+  }
+}
