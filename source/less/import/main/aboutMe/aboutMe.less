@@ -1,0 +1,197 @@
+.aboutMe {
+  max-width: 450px;
+  font-size: 16px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 20px;
+  background-color: white;
+  border-left: 3px solid @darkRed;
+  border-bottom: 3px solid @darkRed;
+  border-right: 20px solid @darkRed;
+  border-radius: 50px 10px 10px 50px;
+  margin-bottom: 50px;
+  border-top: 3px solid @darkRed;
+  color: @black;
+  margin-right: 20px;
+  margin-left: 20px;
+  box-shadow: 1px 5px 20px 2px rgba(91, 91, 91, 0.2);
+}
+
+@media (min-width: @tablet-width) {
+  .aboutMe {
+    border-right: 30px solid @darkRed;
+    max-width: 750px;
+    font-size: 18px;
+    padding-right: 70px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 50px;
+    margin-right: 80px;
+    margin-left: 80px;
+    border-radius: 150px 10px 10px 100px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .aboutMe {
+    max-width: 380px;
+    margin-right: 20px;
+    margin-left: 0;
+  }
+}
+
+.aboutMe--right {
+  line-height: 0;
+  max-width: 850px;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+@media (min-width: 850px) {
+  .aboutMe--right {
+    margin-right: 80px;
+    margin-left: 80px;
+    border-radius: 50px 10px 10px 50px;
+    border-top: 3px solid @darkRed;
+    border-left: 3px solid @darkRed;
+    border-bottom: 3px solid @darkRed;
+    border-right: 30px solid @darkRed;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .aboutMe--right {
+    max-width: 500px;
+    margin-right: 0;
+    margin-left: 20px;
+    border-left: 30px solid @darkRed;
+    border-radius: 10px 50px 50px 10px;
+    border-right: 3px solid @darkRed;
+  }
+}
+
+.aboutMe__photo {
+  border-radius: 0;
+}
+
+@media (min-width: 850px) {
+  .aboutMe__photo {
+    border-radius: 48px 0 0 48px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .aboutMe__photo {
+    border-radius: 0 48px 48px 0;
+  }
+}
+
+.aboutMe--methods {
+  padding-top: 0;
+  margin-bottom: 0;
+  border-radius: 50px 10px 10px 50px;
+}
+
+@media (min-width: @tablet-width) {
+  .aboutMe--methods {
+    border-radius: 100px 10px 10px 150px;
+  }
+}
+
+.aboutMe__title {
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 3px solid @blue;
+  padding-bottom: 20px;
+}
+
+@media (min-width: @desktop-width) {
+  .aboutMe__title {
+    font-size: 22px;
+  }
+}
+
+.aboutMe__roundPosition {
+  position: absolute;
+  margin-left: calc(100% - 79px);
+  margin-top: -120px;
+}
+
+@media (min-width: 368px) {
+  .aboutMe__roundPosition {
+    margin-top: -100px;
+  }
+}
+
+@media (min-width: 571px) {
+  .aboutMe__roundPosition {
+    margin-left: 474px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .aboutMe__roundPosition {
+    margin-left: calc(100% - 235px);
+    margin-top: -110px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .aboutMe__roundPosition {
+    margin-left: 827px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .aboutMe__roundPosition {
+    margin-left: 457px;
+    margin-top: -120px;
+  }
+}
+
+.aboutMe__roundPosition--methods {
+  margin-top: -70px;
+}
+
+@media (min-width: @desktop-width) {
+  .aboutMe__roundPosition--methods {
+    margin-top: -80px;
+  }
+}
+
+.aboutMe__roundPosition--right {
+  margin-left: calc(100% - 185px);
+  margin-top: 10px;
+}
+
+@media (min-width: 1060px) {
+  .aboutMe__roundPosition--right {
+    margin-left: 858px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .aboutMe__roundPosition--right {
+    margin-left: -22px;
+  }
+}
+
+.aboutMe__round {
+  padding: 3px;
+  background-color: white;
+  border-radius: 50%;
+  border: 3px solid @black;
+  margin-bottom: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .aboutMe__round {
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+}
