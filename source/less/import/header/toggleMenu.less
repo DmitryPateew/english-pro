@@ -1,0 +1,68 @@
+.toggleMenu {
+  width: 30px;
+  margin-top: 20px;
+  margin-right: 40px;
+  padding-bottom: 10px;
+  cursor: pointer;
+
+}
+
+
+
+@media (min-width: 420px) {
+  .toggleMenu {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 500px) {
+  .toggleMenu {
+    display: none;
+  }
+}
+
+.toggleMenu__line {
+  height: 3px;
+  background-color: white;
+  margin-bottom: 6px;
+  transition: all 0.4s ease-in-out;
+}
+
+.toggleMenu__line--4{
+  position: absolute;
+}
+
+
+.checkbox:checked + label > .toggleMenu > .toggleMenu__line--1{
+  transform: rotate(45deg);
+  height: 3px;
+  width: 30px;
+  margin-top: 10px;
+  background-color: red;
+  transform-origin: 5%;
+}
+
+.checkbox:checked + label > .toggleMenu > .toggleMenu__line--2{
+  transform: rotate(45deg);
+  height: 3px;
+  background-color: transparent;
+  position: absolute;
+}
+
+.checkbox:checked + label > .toggleMenu > .toggleMenu__line--3{
+  transform: rotate(-45deg);
+  height: 3px;
+  background-color: transparent;
+  position: absolute;
+
+}
+
+.checkbox:checked + label > .toggleMenu > .toggleMenu__line--4{
+  transform: rotate(-45deg);
+  height: 3px;
+  width: 30px;
+  position: absolute;
+  margin-top: 10px;
+  background-color: red;
+  transform-origin: 5%;
+}

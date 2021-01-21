@@ -1,0 +1,57 @@
+.popUp {
+  position: absolute;
+  width: 300px;
+  border-top: 10px solid @darkRed;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  margin-top: -50vw;
+  box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+  padding-bottom: 30px;
+  padding-top: 20px;
+  animation: bounce 0.6s;
+}
+
+@media (min-width: 550px) {
+  .popUp {
+    width: 500px;
+  }
+}
+
+.popUp__description {
+  text-align: center;
+  font-size: 22px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 5px;
+}
+
+.popUp__footer {
+  height: 130px;
+  background-color: @blue;
+  border-left: 2px solid @darkRed;
+  border-right: 2px solid @darkRed;
+  background-image: url("../img/backgraund/coffe.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto 110px;
+}
+
+.popUp__close {
+  position: absolute;
+  margin-left: 260px;
+  cursor: pointer;
+  transition: 300ms;
+  transition-timing-function: ease;
+
+
+  &:hover {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 550px) {
+  .popUp__close {
+    margin-left: 460px;
+  }
+}

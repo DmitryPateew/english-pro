@@ -1,8 +1,8 @@
 {
-  "name": "cat-energy-19",
-  "version": "17.0.0",
+  "name": "english-pro",
+  "version": "1.0.0",
   "private": true,
-  "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "description": "Lending for english teacher",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
@@ -16,7 +16,12 @@
     "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^2.0.0",
     "gulp-sourcemaps": "2.6.x",
+    "gulp-svgo": "^2.2.1",
     "gulp-webp": "^4.0.1",
+    "install": "0.13.0",
+    "jpegtran": "2.0.0",
+    "nodemon": "2.0.6",
+    "npm": "6.14.10",
     "posthtml-include": "^1.4.3",
     "stylelint": "10.1.x",
     "stylelint-config-htmlacademy": "^0.1.4"
@@ -26,7 +31,9 @@
     "stylelint": "stylelint \\\"source/less/**/*.less\\\" --syntax source/less",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp start"
+    "start": "gulp start",
+    "startNode": "node index.js",
+    "devNode": "nodemon index.js"
   },
   "browserslist": [
     "last 2 versions",
@@ -46,7 +53,27 @@
     "node": "8.16"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
     "browserslist": "^4.11.1",
-    "caniuse-lite": "^1.0.30001038"
-  }
+    "caniuse-lite": "^1.0.30001038",
+    "express": "4.17.1",
+    "express-handlebars": "5.2.0",
+    "nodemailer": "^6.4.17",
+    "nodemailer-sendgrid-transport": "^0.2.0"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmitryPateew/english-pro.git"
+  },
+  "keywords": [
+    "nodeJs",
+    "lending"
+  ],
+  "author": "Dmitry Pateew <isildor.008@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DmitryPateew/english-pro/issues"
+  },
+  "homepage": "https://github.com/DmitryPateew/english-pro#readme"
 }

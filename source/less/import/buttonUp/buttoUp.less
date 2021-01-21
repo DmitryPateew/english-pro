@@ -1,0 +1,33 @@
+.buttonUp {
+  position: fixed;
+  z-index: 1;
+  padding: 0;
+  bottom: 75px;
+  right: 20px;
+  width: 64px;
+  height: 64px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  border: 5px solid gray;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+  color: gray;
+  background-color: rgba(255, 255, 255, 0.8);
+  outline: none;
+  transition: 500ms;
+  transition-timing-function: ease;
+
+  &:hover {
+    color: red;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: red;
+
+  }
+}
+
+.shown {
+  display: inline-block;
+}

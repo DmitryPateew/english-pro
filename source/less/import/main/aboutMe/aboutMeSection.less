@@ -2,8 +2,14 @@
   width: 100%;
   display: flex;
   padding-top: 50px;
-  padding-bottom: 90px;
+  padding-bottom: 0;
   flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .aboutMeSection {
+    padding-bottom: 90px;
+  }
 }
 
 @media (min-width: @desktop-width) {
